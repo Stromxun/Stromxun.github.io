@@ -4,7 +4,32 @@
   
     
     <entry>
-      <title>C0 INTRODUCTION</title>
+      <title>计算理论导引 hw0</title>
+      <link href="/2025/09/11/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/hw/C0/"/>
+      <url>/2025/09/11/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/hw/C0/</url>
+      
+        <content type="html"><![CDATA[<h4 id="0-1"><a href="#0-1" class="headerlink" title="0.1"></a>0.1</h4><p>a: 包含奇数的自然数<br>b: 能被2整除的整数<br>c: 被2整除的自然数<br>d: 能被2和3分别整除的自然数<br>e: 回文的01串<br>f: 空集，不存在整数 n &#x3D; n + 1</p><h4 id="0-2"><a href="#0-2" class="headerlink" title="0.2"></a>0.2</h4><p>a: {1, 10, 100}<br>b: {n | n is an integer and n &gt; 5}<br>c: {0, 1, 2, 3, 4}<br>d: {‘aba’}<br>e: {ε}<br>f: {∅}</p><h4 id="0-3"><a href="#0-3" class="headerlink" title="0.3"></a>0.3</h4><p>a: False<br>b: True<br>c: {x, y, z}<br>d: {x, y}<br>e: {(x, x), (x, y), (y, x), (y, y), (z, x), (z, y)}<br>f: {∅, {x}, {y}, {x, y} }</p><h4 id="0-4"><a href="#0-4" class="headerlink" title="0.4"></a>0.4</h4><p>有a * b个元素。A中有a个元素， B中有b个元素，A和B的笛卡尔积是A的每个元素与B的每个元素组成有序对，组成个数为 a * b。</p><h4 id="0-5"><a href="#0-5" class="headerlink" title="0.5"></a>0.5</h4><p>有$2^c$个。一个集合的幂集就是该集合的所有子集。C集合一共有c个元素。求子集个数公式如下:<br>$$\sum_{k&#x3D;0}^{c} \binom{c}{k} &#x3D; \binom{c}{0} + \binom{c}{1} + \cdots + \binom{c}{c} &#x3D; 2^c$$</p><h4 id="0-6"><a href="#0-6" class="headerlink" title="0.6"></a>0.6</h4><p>a: 7<br>b: {0 &lt; x &lt; 6 | x ∈ $N$}<br>c: 6<br>d: {0 &lt; x &lt; 6, 5 &lt; y &lt; 11| x, y ∈ $N$}<br>e: 8</p><h4 id="0-7"><a href="#0-7" class="headerlink" title="0.7"></a>0.7</h4><p>a: 设 S &#x3D; {a, b, c}, R &#x3D; {(a, a), (b, b), (c, c), (a, b), (b, a), (b, c), (c, b)}<br>b: 设 S &#x3D; {a, b, c}, R &#x3D; {(a, a), (b, b), (c, c), (a, b), (b, c)}<br>c: 设 S &#x3D; {a, b, c}, R &#x3D; {(a, b), (b, a), (a, c), (c, a), (b, c), (c, b)}</p><h4 id="0-8"><a href="#0-8" class="headerlink" title="0.8"></a>0.8</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    1((1))--- 2((2))</span><br><span class="line">    2 --- 3((3))</span><br><span class="line">    1 --- 3</span><br><span class="line">    2 --- 4</span><br><span class="line">    1 --- 4((4))</span><br></pre></td></tr></table></figure><p>path: 3 -&gt; 1 -&gt; 4 or 3-&gt; 2 -&gt; 4</p><h4 id="0-9"><a href="#0-9" class="headerlink" title="0.9"></a>0.9</h4><p>一个有6个节点(1~6)的无向图，每个节点的度都为3，每个节点连接的对方节点也是有规律的（不写出来了）。</p><h4 id="0-10"><a href="#0-10" class="headerlink" title="0.10"></a>0.10</h4><p>divide each side by (a−b) to get a+b &#x3D; b </p><p>这一步错了，当 a &#x3D; b &#x3D; 1 时， a - b &#x3D; 0，除0是错误操作。</p><h4 id="0-11"><a href="#0-11" class="headerlink" title="0.11"></a>0.11</h4><p>使用数学归纳法，求出第一项和第二项的值，看是否满足公式，再设S(n - 1)项是成立的， 利用S(n) &#x3D; n + S(n - 1)的关系，将 S(n - 1) &#x3D; 1 &#x2F; 2 * n * (n - 1)，代入到前式，即可得证。第二小题可用同样的思路解决。</p><h4 id="0-12"><a href="#0-12" class="headerlink" title="0.12"></a>0.12</h4><p>该证明只证明出存在一个马集合中马的数量为 k (k &gt;&#x3D; 1) 并且该集合中马的颜色都为同一种的情况下，无论去除多少马，集合中马的颜色都相同。当遇到马的数量比k大的集合时，便不一定满足claim了。(claim中，并不存在递进关系，无法使用归纳法证明。)</p><h4 id="0-13"><a href="#0-13" class="headerlink" title="0.13"></a>0.13</h4><p>目前找到3个：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    1((1))--- 2((2))</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    1((1))--- 2((2))</span><br><span class="line">    2 --- 3((3))</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    1((1))--- 2((2))</span><br><span class="line">    2 --- 3((3))</span><br><span class="line">    1 --- 3</span><br><span class="line">    3 --- 4((4))</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 《计算理论导引》 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 习题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计算理论导引 C0 INTRODUCTION</title>
       <link href="/2025/09/10/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/notes/C0/"/>
       <url>/2025/09/10/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/notes/C0/</url>
       
