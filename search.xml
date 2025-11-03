@@ -4,6 +4,94 @@
   
     
     <entry>
+      <title>搜索算法</title>
+      <link href="/2025/11/03/AIMA/notes/Search_Algorithm/"/>
+      <url>/2025/11/03/AIMA/notes/Search_Algorithm/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CS188 - Project 0</title>
+      <link href="/2025/11/03/AIMA/CS188/P0/"/>
+      <url>/2025/11/03/AIMA/CS188/P0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Q1-Addition"><a href="#Q1-Addition" class="headerlink" title="Q1: Addition"></a>Q1: Addition</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">a, b</span>):</span><br><span class="line">    <span class="string">&quot;Return the sum of a and b&quot;</span></span><br><span class="line">    <span class="string">&quot;*** YOUR CODE HERE ***&quot;</span></span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="Q2-buyLotsOfFruit-function"><a href="#Q2-buyLotsOfFruit-function" class="headerlink" title="Q2: buyLotsOfFruit function"></a>Q2: buyLotsOfFruit function</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">buyLotsOfFruit</span>(<span class="params">orderList</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        orderList: List of (fruit, numPounds) tuples</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns cost of order</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    totalCost = <span class="number">0.0</span></span><br><span class="line">    <span class="string">&quot;*** YOUR CODE HERE ***&quot;</span></span><br><span class="line">    <span class="keyword">for</span> fruit <span class="keyword">in</span> orderList:</span><br><span class="line">        totalCost += fruitPrices[fruit[<span class="number">0</span>]] * fruit[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">return</span> totalCost</span><br></pre></td></tr></table></figure><h3 id="Q3-shopSmart-function"><a href="#Q3-shopSmart-function" class="headerlink" title="Q3: shopSmart function"></a>Q3: shopSmart function</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">shopSmart</span>(<span class="params">orderList, fruitShops</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        orderList: List of (fruit, numPound) tuples</span></span><br><span class="line"><span class="string">        fruitShops: List of FruitShops</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="string">&quot;*** YOUR CODE HERE ***&quot;</span></span><br><span class="line">    bestShop = fruitShops[<span class="number">0</span>]</span><br><span class="line">    bestCost = bestShop.getPriceOfOrder(orderList)</span><br><span class="line">    <span class="keyword">for</span> s <span class="keyword">in</span> fruitShops:</span><br><span class="line">        cost = s.getPriceOfOrder(orderList)</span><br><span class="line">        <span class="keyword">if</span> cost &lt; bestCost:</span><br><span class="line">            bestShop = s</span><br><span class="line">    <span class="keyword">return</span> bestShop</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> CS188 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> project </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>引言</title>
+      <link href="/2025/09/15/%E8%8A%B1%E4%B9%A6/notes/C1/"/>
+      <url>/2025/09/15/%E8%8A%B1%E4%B9%A6/notes/C1/</url>
+      
+        <content type="html"><![CDATA[<p><strong>机器学习</strong>：AI系统能够从原始数据中提取模式的能力。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 《机器学习》(花书) </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>REGULAR LANGUAGES</title>
+      <link href="/2025/09/15/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/notes/C1/"/>
+      <url>/2025/09/15/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/notes/C1/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-1-有穷自动机-finite-automata"><a href="#1-1-有穷自动机-finite-automata" class="headerlink" title="1.1 有穷自动机(finite automata)"></a>1.1 有穷自动机(finite automata)</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> 《计算理论导引》 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算理论导引 hw0</title>
       <link href="/2025/09/11/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/hw/C0/"/>
       <url>/2025/09/11/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/hw/C0/</url>
